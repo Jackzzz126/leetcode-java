@@ -18,15 +18,14 @@ public class AlgTest {
 
         str = "[1,2,2,3,null,null,3,4,null,null,4]";
         TreeNode root = TreeNode.fromString(str);
-        //log.info("{}", str);
-        //log.info("{}", root.toString(root));
+        log.info("{}", str);
+        log.info("{}", root.toString());
 
         str = "[1,2,2,3]";
         ListNode head = ListNode.fromString(str);
-        //log.info("{}", str);
-        //log.info("{}", head.toString());
+        log.info("{}", str);
+        log.info("{}", head.toString());
 
         log.info("alg test end running...");
     }
 }
-

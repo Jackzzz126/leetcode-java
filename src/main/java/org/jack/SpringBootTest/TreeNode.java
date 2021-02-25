@@ -23,7 +23,8 @@ public class TreeNode {
     TreeNode() {
     }
 
-    public String toString(TreeNode root) {
+    public String toString() {
+        TreeNode root = this;
         List<Integer> nums =  new ArrayList<>();
         if(root != null) {
             nums = root.toIntList();
