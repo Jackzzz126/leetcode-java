@@ -9,7 +9,7 @@ import java.util.List;
  * TreeNode
  *
  * @author zhengzhe17
- * @CreateDate 2020/9/21
+ * @date 2020/9/21
  */
 public class TreeNode {
     public int val = 0;
@@ -24,24 +24,16 @@ public class TreeNode {
     }
 
     public String toString() {
-        TreeNode root = this;
-        List<Integer> nums =  new ArrayList<>();
-        if(root != null) {
-            nums = root.toIntList();
-        }
+        List<Integer> nums = this.toIntList();
         return StrUtils.intList2Str(nums);
     }
 
     public List<Integer> toIntList() {
-        TreeNode root = this;
         List<Integer> valList = new ArrayList<>();
-        if(root == null) {
-            return valList;
-        }
 
         List<TreeNode> curNodes = new ArrayList<>();
-        curNodes.add(root);
-        valList.add(root.val);
+        curNodes.add(this);
+        valList.add(this.val);
 
         while (!CollectionUtils.isEmpty(curNodes)) {
             List<TreeNode> nextNodes = new ArrayList<>();

@@ -9,7 +9,7 @@ import java.util.List;
  * ListNode
  *
  * @author zhengzhe17
- * @CreateTime 2020/9/21
+ * @date 2020/9/21
  */
 public class ListNode {
     public int val;
