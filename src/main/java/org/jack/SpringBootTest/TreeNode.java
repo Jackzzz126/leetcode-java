@@ -9,7 +9,7 @@ import java.util.List;
  * TreeNode
  *
  * @author zhengzhe17
- * @CreateTime 2020/9/21
+ * @CreateDate 2020/9/21
  */
 public class TreeNode {
     public int val = 0;
@@ -23,7 +23,17 @@ public class TreeNode {
     TreeNode() {
     }
 
-    public static List<Integer> tree2Arr(TreeNode root) {
+    public static String toString(TreeNode root) {
+        List<Integer> nums = TreeNode.treeNode2List(root);
+        return StrUtils.intList2Str(nums);
+    }
+
+    public static TreeNode fromString(String string) {
+        List<Integer> nums = StrUtils.str2IntList(string);
+        return TreeNode.list2TreeNode(nums);
+    }
+
+    private static List<Integer> treeNode2List(TreeNode root) {
           List<Integer> valList = new ArrayList<>();
           if(root == null) {
               return valList;
@@ -64,7 +74,7 @@ public class TreeNode {
           return valList.subList(0, lastNotNullIndex + 1);
       }
 
-      public static TreeNode arr2Tree(List<Integer> nums) {
+      private static TreeNode list2TreeNode(List<Integer> nums) {
           if(nums == null || nums.size() < 1) {
               return null;
           }

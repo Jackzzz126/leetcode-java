@@ -13,10 +13,10 @@ public class AlgTest {
     public void run() {
         log.info("alg test start running...");
 
-        //Integer[] numArr = {1,2,2,3,null,null,3,4,null,null,4};
-        //TreeNode root = TreeNode.arr2Tree(Arrays.asList(numArr));
-        //List<Integer> numList = TreeNode.tree2Arr(root);
-        //log.info(numList.toString());
+        //String str = "1,2,2,3,null,null,3,4,null,null,4";
+        //log.info("{}", str);
+        //TreeNode root = TreeNode.fromString(str);
+        //log.info("{}", TreeNode.toString(root));
 
         //int[] numArr = {1,2,2,3};
         //ListNode head = ListNode.arr2List(numArr);
@@ -26,3 +26,4 @@ public class AlgTest {
         log.info("alg test end running...");
     }
 }
+
