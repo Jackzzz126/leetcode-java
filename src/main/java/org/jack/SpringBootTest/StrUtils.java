@@ -15,7 +15,8 @@ public class StrUtils {
         if(string == null) {
             return nums;
         }
-        String[] numStrs = string.split(",");
+        String numsStr = string.substring(1, string.length() - 1);
+        String[] numStrs = numsStr.split(",");
         for (String numStr : numStrs) {
             if("null".equals(numStr.toLowerCase())) {
                 nums.add(null);
@@ -28,6 +29,7 @@ public class StrUtils {
 
     public static String intList2Str(List<Integer> nums) {
         StringBuilder sb = new StringBuilder();
+        sb.append("[");
         for (int i = 0; i < nums.size(); i++) {
             Integer num = nums.get(i);
 
@@ -41,6 +43,7 @@ public class StrUtils {
                 sb.append(",");
             }
         }
+        sb.append("]");
         return sb.toString();
     }
 }

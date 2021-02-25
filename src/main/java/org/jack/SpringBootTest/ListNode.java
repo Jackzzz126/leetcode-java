@@ -1,5 +1,7 @@
 package org.jack;
 
+import org.jack.SpringBootTest.StrUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,11 +17,33 @@ public class ListNode {
     ListNode(int val) {
         this.val = val;
     }
-    public static ListNode arr2List(int[] nums) {
+
+    @Override
+    public String toString() {
+        List<Integer> nums = this.toIntList();
+        return StrUtils.intList2Str(nums);
+    }
+
+    public List<Integer> toIntList() {
+        List<Integer> nums = new ArrayList<>();
+        ListNode node = this;
+        while (node != null) {
+            nums.add(node.val);
+            node = node.next;
+        }
+        return nums;
+    }
+
+    public static ListNode fromString(String string) {
+        List<Integer> nums = StrUtils.str2IntList(string);
+        return ListNode.fromIntList(nums);
+    }
+
+    private static ListNode fromIntList(List<Integer> nums) {
         ListNode head = null;
         ListNode pre = null;
-        for (int i = 0; i < nums.length; i++) {
-            ListNode node = new ListNode(nums[i]);
+        for (Integer num : nums) {
+            ListNode node = new ListNode(num);
             if(pre != null) {
                 pre.next = node;
             }
@@ -29,14 +53,5 @@ public class ListNode {
             }
         }
         return head;
-    }
-    public static List<Integer> list2Arr(ListNode head) {
-        List<Integer> nums = new ArrayList<>();
-        ListNode node = head;
-        while (node != null) {
-            nums.add(node.val);
-            node = node.next;
-        }
-        return nums;
     }
 }
