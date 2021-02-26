@@ -10,16 +10,24 @@ import java.util.List;
  * @date 2021/2/25
  */
 public class StrUtils {
-    public static List<Integer> str2IntList(String string) {
+    public static List<Integer> str2IntList(String str) {
         List<Integer> nums = new ArrayList<>();
-        if(string == null) {
+        if(str == null) {
             return nums;
         }
-        String numsStr = string.substring(1, string.length() - 1);
+        int leftIndex = str.indexOf("[");
+        int rightIndex = str.indexOf("]");
+        if(leftIndex < 0 || rightIndex < 0) {
+            return nums;
+        }
+        String numsStr = str.substring(leftIndex + 1, rightIndex);
         String[] numStrs = numsStr.split(",");
         for (String numStr : numStrs) {
-            if("null".equals(numStr.toLowerCase())) {
+            numsStr = numStr.toLowerCase().trim();
+            if("null".equals(numStr)) {
                 nums.add(null);
+            } else if("".equals(numsStr)){
+                continue;
             } else {
                 nums.add(Integer.valueOf(numStr));
             }

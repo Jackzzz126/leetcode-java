@@ -71,8 +71,11 @@ public class TreeNode {
         return TreeNode.fromIntList(nums);
     }
 
-    private static TreeNode fromIntList(List<Integer> nums) {
+    public static TreeNode fromIntList(List<Integer> nums) {
         if(nums == null || nums.size() < 1) {
+            return null;
+        }
+        if(nums.get(0) == null) {
             return null;
         }
 
