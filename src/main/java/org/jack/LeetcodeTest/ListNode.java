@@ -1,6 +1,6 @@
 package org.jack;
 
-import org.jack.SpringBootTest.StrUtils;
+import org.jack.LeetcodeTest.StrUtils;
 
 import java.util.ArrayList;
 import java.util.List;

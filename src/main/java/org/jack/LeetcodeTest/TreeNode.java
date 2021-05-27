@@ -1,4 +1,4 @@
-package org.jack.SpringBootTest;
+package org.jack.LeetcodeTest;
 
 import org.springframework.util.CollectionUtils;
 

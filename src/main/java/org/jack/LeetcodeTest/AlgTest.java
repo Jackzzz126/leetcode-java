@@ -1,4 +1,4 @@
-package org.jack.SpringBootTest;
+package org.jack.LeetcodeTest;
 
 import lombok.extern.slf4j.Slf4j;
 import org.jack.ListNode;

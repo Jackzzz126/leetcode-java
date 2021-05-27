@@ -1,4 +1,4 @@
-package org.jack.SpringBootTest;
+package org.jack.LeetcodeTest;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.jack</groupId>
-	<artifactId>SpringBootTest</artifactId>
+	<artifactId>LeetcodeTest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringBootTest</name>
-	<description>Demo project for Spring Boot</description>
+	<name>LeetcodeTest</name>
+	<description>Spring boot project for leetcode test</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
