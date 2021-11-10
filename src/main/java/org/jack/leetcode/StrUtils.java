@@ -1,4 +1,4 @@
-package org.jack.LeetcodeTest;
+package org.jack.leetcode;
 
 import java.util.ArrayList;
 import java.util.List;

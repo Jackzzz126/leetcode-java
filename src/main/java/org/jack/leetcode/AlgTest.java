@@ -1,4 +1,4 @@
-package org.jack.LeetcodeTest;
+package org.jack.leetcode;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -24,6 +24,9 @@ public class AlgTest {
         //ListNode head = ListNode.fromString(str);
         //log.info("{}", str);
         //log.info("{}", head.toString());
+
+        Exception e = new Exception("test exception");
+        log.error("", 1, 2, 3, e);
 
 
         log.info("alg test end running...");

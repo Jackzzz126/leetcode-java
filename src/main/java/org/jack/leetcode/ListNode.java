@@ -1,6 +1,4 @@
-package org.jack;
-
-import org.jack.LeetcodeTest.StrUtils;
+package org.jack.leetcode;
 
 import java.util.ArrayList;
 import java.util.List;
