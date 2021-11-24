@@ -4,6 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 使用方法
+ *
+ * str = "[1,2,2,3,null,null,3,4,null,null,4]";
+ * TreeNode root = TreeNode.fromString(str);
+ * log.info("{}", str);
+ * log.info("{}", root.toString());
+
+ * str = "[1,2,2,3]";
+ * ListNode head = ListNode.fromString(str);
+ * log.info("{}", str);
+ * log.info("{}", head.toString());
+ */
+
+/**
  * ListNode
  *
  * @author zhengzhe17
