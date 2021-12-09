@@ -10,11 +10,19 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 public class AlgTest {
+
     public void run() {
-        log.info("alg test start running...");
+        log.info("alg test start...");
 
-        String str;
+        try {
+            runTest();
+            log.info("alg test ends");
+        } catch (Exception e) {
+            log.error("alg test end with exception: ", e);
+        }
+    }
 
-        log.info("alg test end running...");
+    private void runTest() throws Exception {
+
     }
 }
