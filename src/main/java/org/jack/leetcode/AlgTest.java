@@ -1,5 +1,4 @@
 package org.jack.leetcode;
-
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -12,13 +11,13 @@ import lombok.extern.slf4j.Slf4j;
 public class AlgTest {
 
     public void run() {
-        log.info("alg test start...");
+        log.info("================ test start... ================");
 
         try {
             runTest();
-            log.info("alg test ends");
+            log.info("================ test ends... ================");
         } catch (Exception e) {
-            log.error("alg test end with exception: ", e);
+            log.info("!!!!!test end with exception: ", e);
         }
     }
 

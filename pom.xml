@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.jack</groupId>
-	<artifactId>LeetcodeTest</artifactId>
+	<artifactId>PlayGround</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>LeetcodeTest</name>
-	<description>Spring boot project for leetcode test</description>
+	<name>PlayGround</name>
+	<description>Spring boot project for test</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -70,7 +70,12 @@
 			<artifactId>spring-core</artifactId>
 			<version>5.2.5.RELEASE</version>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.2.5.RELEASE</version>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
